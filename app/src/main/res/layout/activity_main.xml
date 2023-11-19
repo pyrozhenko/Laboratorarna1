@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/thirdcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="My app"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="92dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_hello"
+        tools:srcCompat="@drawable/wick" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        tools:srcCompat="@drawable/venom" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="92dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/wickView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="John Wick 4"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+    <TextView
+        android:id="@+id/VenomView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Venom"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/AvatarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Avatar: The Way of Water"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/catDescription"
+        android:layout_width="204dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Name: Whiskers Description: Whiskers is our little lazy cat. His fluffy fur feels like warm velvet, and his silver eyes are always filled with curiosity. He loves basking in the sun, purring when petted, and having fun playing with strings. Whiskers always brings us joy with his relaxed nature and affectionate demeanor."
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/wickView" />
+
+    <TextView
+        android:id="@+id/dogDescription"
+        android:layout_width="204dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Name: Whiskers Description: Whiskers is our little lazy cat. His fluffy fur feels like warm velvet, and his silver eyes are always filled with curiosity. He loves basking in the sun, purring when petted, and having fun playing with strings. Whiskers always brings us joy with his relaxed nature and affectionate demeanor."
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/VenomView" />
+
+    <TextView
+        android:id="@+id/birdDescription"
+        android:layout_width="204dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Name: Whiskers Description: Whiskers is our little lazy cat. His fluffy fur feels like warm velvet, and his silver eyes are always filled with curiosity. He loves basking in the sun, purring when petted, and having fun playing with strings. Whiskers always brings us joy with his relaxed nature and affectionate demeanor."
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/AvatarView" />
+
+    <Button
+        android:id="@+id/cat_btn"
+        android:layout_width="78dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="4dp"
+        android:text="More"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/catDescription"
+        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+    <Button
+        android:id="@+id/dog_btn"
+        android:layout_width="78dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="4dp"
+        android:text="More"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/dogDescription"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/bird_btn"
+        android:layout_width="78dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="4dp"
+        android:text="More"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/birdDescription"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
